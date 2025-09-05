@@ -29,3 +29,5 @@ document.addEventListener('DOMContentLoaded', () => {
       monthlyTotal.textContent = formatarMoeda(totalMensal);
   };
 
+  // Função para renderizar a lista de gastos
+  const renderizarGastos = () => {
