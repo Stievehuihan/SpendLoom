@@ -4,3 +4,4 @@ Este é um projeto simples de controle de custos pessoais, criado como uma forma
 
 ## 💡 Funcionalidades  
 - Adicionar despesas por mês e categoria.  
+- Visualizar um resumo com os totais mensais e gerais.  
