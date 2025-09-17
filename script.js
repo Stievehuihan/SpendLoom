@@ -31,3 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Função para renderizar a lista de gastos
   const renderizarGastos = () => {
+      listaGastos.innerHTML = '';
+      const mesSelecionado = filterMonth.value;
+      const gastosFiltrados = mesSelecionado === 'todos' 
+          ? gastos 
