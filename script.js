@@ -37,3 +37,4 @@ document.addEventListener('DOMContentLoaded', () => {
           ? gastos 
           : gastos.filter(g => g.mes === mesSelecionado);
 
+      if (gastosFiltrados.length === 0) {
