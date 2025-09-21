@@ -35,3 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
       const mesSelecionado = filterMonth.value;
       const gastosFiltrados = mesSelecionado === 'todos' 
           ? gastos 
+          : gastos.filter(g => g.mes === mesSelecionado);
+
