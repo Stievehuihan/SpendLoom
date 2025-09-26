@@ -38,3 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
           : gastos.filter(g => g.mes === mesSelecionado);
 
       if (gastosFiltrados.length === 0) {
+          listaGastos.innerHTML = '<li class="no-expenses">Nenhum gasto registrado ainda.</li>';
+          return;
+      }
+
