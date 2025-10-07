@@ -45,3 +45,4 @@ document.addEventListener('DOMContentLoaded', () => {
       gastosFiltrados.forEach((gasto, index) => {
           const li = document.createElement('li');
           li.className = 'expense-item';
+          li.innerHTML = `
