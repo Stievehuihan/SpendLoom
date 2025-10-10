@@ -46,3 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const li = document.createElement('li');
           li.className = 'expense-item';
           li.innerHTML = `
+              <div class="expense-category">
+                  <i class="fas fa-${getIconeCategoria(gasto.categoria)}"></i>
+              </div>
+              <div class="expense-details">
