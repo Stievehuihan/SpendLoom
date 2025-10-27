@@ -8,3 +8,5 @@ Este é um projeto simples de controle de custos pessoais, criado como uma forma
 - Remover despesas específicas ou apagar todos os gastos de uma vez.  
 - Recurso sonoro: ao adicionar um gasto, um áudio simula o som de moedas para uma experiência mais imersiva.  
 
+## 🛠 Tecnologias Utilizadas  
+- HTML5  
