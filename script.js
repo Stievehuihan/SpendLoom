@@ -50,3 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <i class="fas fa-${getIconeCategoria(gasto.categoria)}"></i>
               </div>
               <div class="expense-details">
+                  <span class="expense-description">${gasto.descricao || gasto.categoria}</span>
+                  <span class="expense-date">${gasto.mes}</span>
+              </div>
+              <span class="expense-value">${formatarMoeda(gasto.valor)}</span>
