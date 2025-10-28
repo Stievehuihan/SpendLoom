@@ -103,3 +103,7 @@ header h1 i {
 
 .btn-primary {
   background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: var(--border-radius);

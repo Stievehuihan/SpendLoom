@@ -11,3 +11,5 @@ Este é um projeto simples de controle de custos pessoais, criado como uma forma
 ## 🛠 Tecnologias Utilizadas  
 - HTML5  
 - CSS3  
+- JavaScript  
+
