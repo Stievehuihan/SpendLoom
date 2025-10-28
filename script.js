@@ -54,3 +54,5 @@ document.addEventListener('DOMContentLoaded', () => {
                   <span class="expense-date">${gasto.mes}</span>
               </div>
               <span class="expense-value">${formatarMoeda(gasto.valor)}</span>
+              <button class="delete-btn" data-index="${index}">
+                  <i class="fas fa-trash"></i>
