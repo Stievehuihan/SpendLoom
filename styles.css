@@ -112,3 +112,5 @@ header h1 i {
   font-weight: 600;
   width: 100%;
   transition: var(--transition);
+  display: flex;
+  align-items: center;
