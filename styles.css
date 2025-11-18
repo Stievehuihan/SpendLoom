@@ -114,3 +114,7 @@ header h1 i {
   transition: var(--transition);
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
