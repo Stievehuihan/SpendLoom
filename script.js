@@ -59,3 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
               </button>
           `;
           listaGastos.appendChild(li);
+      });
+
+      atualizarTotais();
+  };
