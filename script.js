@@ -63,3 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       atualizarTotais();
   };
+
+  // Função para obter ícone baseado na categoria
+  const getIconeCategoria = (categoria) => {
