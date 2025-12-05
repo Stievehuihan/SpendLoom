@@ -118,3 +118,5 @@ header h1 i {
   gap: 10px;
 }
 
+.btn-primary:hover {
+  background-color: var(--secondary-color);
