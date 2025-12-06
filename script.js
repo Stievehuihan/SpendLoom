@@ -66,3 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Função para obter ícone baseado na categoria
   const getIconeCategoria = (categoria) => {
+      const icones = {
+          'Alimentação': 'utensils',
+          'Transporte': 'car',
+          'Lazer': 'gamepad',
