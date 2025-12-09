@@ -19,3 +19,4 @@ Este é um projeto simples de controle de custos pessoais, criado como uma forma
 
 ## Como Usar
 1. Clone este repositório:
+   ```bash

@@ -121,3 +121,4 @@ header h1 i {
 .btn-primary:hover {
   background-color: var(--secondary-color);
   transform: translateY(-2px);
+}

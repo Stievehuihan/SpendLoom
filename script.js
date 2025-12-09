@@ -70,3 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
           'Alimentação': 'utensils',
           'Transporte': 'car',
           'Lazer': 'gamepad',
+          'Moradia': 'home',
+          'Saúde': 'heartbeat',
+          'Outros': 'ellipsis-h'
+      };
