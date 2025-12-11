@@ -122,3 +122,6 @@ header h1 i {
   background-color: var(--secondary-color);
   transform: translateY(-2px);
 }
+
+.summary-section h2 {
+  color: var(--primary-color);

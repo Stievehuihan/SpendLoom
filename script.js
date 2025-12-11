@@ -75,3 +75,4 @@ document.addEventListener('DOMContentLoaded', () => {
           'Outros': 'ellipsis-h'
       };
       return icones[categoria] || 'money-bill';
+  };
