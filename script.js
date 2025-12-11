@@ -74,3 +74,4 @@ document.addEventListener('DOMContentLoaded', () => {
           'Saúde': 'heartbeat',
           'Outros': 'ellipsis-h'
       };
+      return icones[categoria] || 'money-bill';
