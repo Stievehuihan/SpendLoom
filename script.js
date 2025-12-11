@@ -76,3 +76,5 @@ document.addEventListener('DOMContentLoaded', () => {
       };
       return icones[categoria] || 'money-bill';
   };
+
+  // Adicionar novo gasto
