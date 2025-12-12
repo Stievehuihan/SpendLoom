@@ -83,3 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       const novoGasto = {
           mes: document.getElementById('mes').value,
+          categoria: document.getElementById('categoria').value,
+          valor: parseFloat(document.getElementById('valor').value),
+          descricao: document.getElementById('descricao').value
+      };
