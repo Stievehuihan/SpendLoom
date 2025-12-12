@@ -79,3 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Adicionar novo gasto
   form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const novoGasto = {
+          mes: document.getElementById('mes').value,
