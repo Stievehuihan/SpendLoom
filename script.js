@@ -78,3 +78,4 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Adicionar novo gasto
+  form.addEventListener('submit', (e) => {
