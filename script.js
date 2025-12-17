@@ -87,3 +87,4 @@ document.addEventListener('DOMContentLoaded', () => {
           valor: parseFloat(document.getElementById('valor').value),
           descricao: document.getElementById('descricao').value
       };
+

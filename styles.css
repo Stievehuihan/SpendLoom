@@ -128,3 +128,5 @@ header h1 i {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  gap: 10px;
+}
