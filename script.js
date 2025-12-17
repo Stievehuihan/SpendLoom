@@ -92,3 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('gastos', JSON.stringify(gastos));
       
       somDinheiro.play().catch(err => console.log('Erro ao tocar som:', err));
+      form.reset();
+      renderizarGastos();
+  });
+
