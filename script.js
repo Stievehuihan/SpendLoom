@@ -96,3 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
       renderizarGastos();
   });
 
+  // Filtrar por mês
+  filterMonth.addEventListener('change', renderizarGastos);
+
