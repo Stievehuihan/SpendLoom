@@ -99,3 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Filtrar por mês
   filterMonth.addEventListener('change', renderizarGastos);
 
+  // Deletar gasto individual
+  listaGastos.addEventListener('click', (e) => {
+      if (e.target.closest('.delete-btn')) {
