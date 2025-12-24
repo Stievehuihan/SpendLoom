@@ -102,3 +102,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // Deletar gasto individual
   listaGastos.addEventListener('click', (e) => {
       if (e.target.closest('.delete-btn')) {
+          const index = parseInt(e.target.closest('.delete-btn').dataset.index);
