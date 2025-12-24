@@ -103,3 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
   listaGastos.addEventListener('click', (e) => {
       if (e.target.closest('.delete-btn')) {
           const index = parseInt(e.target.closest('.delete-btn').dataset.index);
+          gastos.splice(index, 1);
+          localStorage.setItem('gastos', JSON.stringify(gastos));
+          renderizarGastos();
+      }

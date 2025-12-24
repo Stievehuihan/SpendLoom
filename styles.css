@@ -140,3 +140,6 @@ header h1 i {
   gap: 15px;
 }
 
+.filter-group {
+  display: flex;
+  align-items: center;
