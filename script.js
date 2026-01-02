@@ -107,3 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
           localStorage.setItem('gastos', JSON.stringify(gastos));
           renderizarGastos();
       }
+  });
+
+  // Limpar todos os gastos
+  limparTudoBtn.addEventListener('click', () => {
