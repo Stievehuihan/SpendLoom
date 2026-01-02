@@ -114,3 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (confirm('Tem certeza que deseja apagar todos os gastos?')) {
           gastos = [];
           localStorage.removeItem('gastos');
+          renderizarGastos();
+      }
+  });
+
