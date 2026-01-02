@@ -111,3 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Limpar todos os gastos
   limparTudoBtn.addEventListener('click', () => {
+      if (confirm('Tem certeza que deseja apagar todos os gastos?')) {
+          gastos = [];
+          localStorage.removeItem('gastos');

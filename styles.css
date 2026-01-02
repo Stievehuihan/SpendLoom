@@ -147,3 +147,6 @@ header h1 i {
 }
 
 .filter-group label {
+  color: var(--primary-color);
+  font-weight: 600;
+}
