@@ -118,3 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 
+  // Exportar dados
+  exportBtn.addEventListener('click', () => {
+      const dadosExport = gastos.map(g => ({
+          Mês: g.mes,

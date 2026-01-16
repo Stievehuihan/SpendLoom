@@ -154,3 +154,4 @@ header h1 i {
 .filter-group select {
   padding: 8px 12px;
   border-radius: var(--border-radius);
+  border: 1px solid #ddd;
