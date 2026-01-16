@@ -122,3 +122,4 @@ document.addEventListener('DOMContentLoaded', () => {
   exportBtn.addEventListener('click', () => {
       const dadosExport = gastos.map(g => ({
           Mês: g.mes,
+          Categoria: g.categoria,
