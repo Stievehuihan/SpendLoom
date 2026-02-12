@@ -123,3 +123,5 @@ document.addEventListener('DOMContentLoaded', () => {
       const dadosExport = gastos.map(g => ({
           Mês: g.mes,
           Categoria: g.categoria,
+          Valor: formatarMoeda(g.valor),
+          Descrição: g.descricao || '-'
