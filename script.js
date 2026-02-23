@@ -125,3 +125,5 @@ document.addEventListener('DOMContentLoaded', () => {
           Categoria: g.categoria,
           Valor: formatarMoeda(g.valor),
           Descrição: g.descricao || '-'
+      }));
+      

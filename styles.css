@@ -156,3 +156,6 @@ header h1 i {
   border-radius: var(--border-radius);
   border: 1px solid #ddd;
 }
+
+.btn-secondary {
+  background-color: var(--light-color);
