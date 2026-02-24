@@ -127,3 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
           Descrição: g.descricao || '-'
       }));
       
+      const csv = [
+          ['Mês', 'Categoria', 'Valor', 'Descrição'],
+          ...dadosExport.map(g => [g.Mês, g.Categoria, g.Valor, g.Descrição])
