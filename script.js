@@ -132,3 +132,5 @@ document.addEventListener('DOMContentLoaded', () => {
           ...dadosExport.map(g => [g.Mês, g.Categoria, g.Valor, g.Descrição])
       ].map(row => row.join(',')).join('\n');
 
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const url = window.URL.createObjectURL(blob);
