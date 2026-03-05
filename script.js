@@ -130,3 +130,5 @@ document.addEventListener('DOMContentLoaded', () => {
       const csv = [
           ['Mês', 'Categoria', 'Valor', 'Descrição'],
           ...dadosExport.map(g => [g.Mês, g.Categoria, g.Valor, g.Descrição])
+      ].map(row => row.join(',')).join('\n');
+

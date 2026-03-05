@@ -159,3 +159,7 @@ header h1 i {
 
 .btn-secondary {
   background-color: var(--light-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 8px 15px;
+  border-radius: var(--border-radius);
