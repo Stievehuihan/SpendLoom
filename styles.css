@@ -164,3 +164,6 @@ header h1 i {
   padding: 8px 15px;
   border-radius: var(--border-radius);
   cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: var(--transition);
