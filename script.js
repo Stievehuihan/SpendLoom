@@ -141,3 +141,5 @@ document.addEventListener('DOMContentLoaded', () => {
       window.URL.revokeObjectURL(url);
   });
 
+  // Inicialização
+  renderizarGastos();
