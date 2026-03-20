@@ -172,3 +172,7 @@ header h1 i {
   gap: 8px;
 }
 
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
