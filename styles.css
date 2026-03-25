@@ -176,3 +176,6 @@ header h1 i {
   background-color: var(--primary-color);
   color: white;
 }
+
+.stats-container {
+  display: grid;
