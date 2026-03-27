@@ -190,3 +190,7 @@ header h1 i {
   padding: 20px;
   box-shadow: var(--box-shadow);
   text-align: center;
+  border-top: 4px solid var(--primary-color);
+}
+
+.stat-card.total {
