@@ -194,3 +194,5 @@ header h1 i {
 }
 
 .stat-card.total {
+  border-top-color: var(--success-color);
+}
