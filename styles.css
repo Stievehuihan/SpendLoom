@@ -186,3 +186,7 @@ header h1 i {
 
 .stat-card {
   background: white;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  text-align: center;
