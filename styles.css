@@ -203,3 +203,7 @@ header h1 i {
 
 .stat-card h3 {
   font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
