@@ -213,3 +213,6 @@ header h1 i {
   color: var(--dark-color);
 }
 
+#chart-container {
+  height: 300px;
+  margin-bottom: 30px;
