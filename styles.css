@@ -225,3 +225,7 @@ header h1 i {
 .expenses-list ul {
   list-style: none;
 }
+
+.expenses-list li {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
