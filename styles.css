@@ -223,3 +223,5 @@ header h1 i {
 }
 
 .expenses-list ul {
+  list-style: none;
+}
