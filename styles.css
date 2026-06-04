@@ -234,3 +234,7 @@ header h1 i {
   align-items: center;
 }
 
+.expenses-list li:last-child {
+  border-bottom: none;
+}
+
