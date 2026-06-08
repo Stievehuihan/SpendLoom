@@ -238,3 +238,6 @@ header h1 i {
   border-bottom: none;
 }
 
+.expense-item {
+  display: flex;
+  align-items: center;
