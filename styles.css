@@ -241,3 +241,4 @@ header h1 i {
 .expense-item {
   display: flex;
   align-items: center;
+  gap: 15px;
