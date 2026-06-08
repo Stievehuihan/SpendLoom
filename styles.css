@@ -250,3 +250,6 @@ header h1 i {
   border-radius: 50%;
   background-color: var(--primary-color);
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
