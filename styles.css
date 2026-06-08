@@ -242,3 +242,7 @@ header h1 i {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.expense-category {
+  width: 40px;
