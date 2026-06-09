@@ -257,3 +257,6 @@ header h1 i {
 }
 
 .expense-details {
+  flex-grow: 1;
+}
+
