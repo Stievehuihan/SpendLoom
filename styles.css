@@ -260,3 +260,6 @@ header h1 i {
   flex-grow: 1;
 }
 
+.expense-description {
+  font-size: 0.9rem;
+  color: #666;
