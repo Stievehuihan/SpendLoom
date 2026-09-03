@@ -274,3 +274,7 @@ header h1 i {
   font-size: 0.8rem;
   color: #999;
 }
+
+.delete-btn {
+  background: none;
+  border: none;
