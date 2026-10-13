@@ -20,3 +20,4 @@ Este é um projeto simples de controle de custos pessoais, criado como uma forma
 ## Como Usar
 1. Clone este repositório:
    ```bash
+   git clone https://github.com/PabloG-7/Gastos-Mensais.git
