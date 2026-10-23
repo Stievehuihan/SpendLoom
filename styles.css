@@ -285,3 +285,5 @@ header h1 i {
   transition: var(--transition);
 }
 
+.delete-btn:hover {
+  transform: scale(1.2);
