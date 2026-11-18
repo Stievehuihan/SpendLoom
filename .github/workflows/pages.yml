@@ -1,0 +1,17 @@
+name: pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: required files are present
+        run: |
+          test -f index.html
+          test -f style.css -o -f styles.css
+          echo "static site is intact"
