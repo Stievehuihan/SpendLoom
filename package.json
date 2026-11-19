@@ -1,0 +1,10 @@
+{
+  "name": "spendloom",
+  "version": "0.113.0",
+  "private": true,
+  "description": "Monthly expense tracker built on plain HTML, CSS and JavaScript",
+  "scripts": {
+    "test": "node --test tests/"
+  },
+  "license": "MIT"
+}
