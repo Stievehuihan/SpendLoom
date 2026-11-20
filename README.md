@@ -1,23 +1,60 @@
-# Controle de Custos Pessoais  
+# SpendLoom
 
-Este é um projeto simples de controle de custos pessoais, criado como uma forma de aprimorar minhas habilidades em desenvolvimento front-end e manipulação de DOM com JavaScript.  
+A monthly expense tracker that runs from a single static page — no framework, no build
+step, no account. Everything lives in `localStorage`, so the data never leaves the browser.
 
-## 💡 Funcionalidades  
-- Adicionar despesas por mês e categoria.  
-- Visualizar um resumo com os totais mensais e gerais.  
-- Remover despesas específicas ou apagar todos os gastos de uma vez.  
-- Recurso sonoro: ao adicionar um gasto, um áudio simula o som de moedas para uma experiência mais imersiva.  
+![pages](https://img.shields.io/badge/site-static-2f6f4e) ![tests](https://img.shields.io/badge/tests-node%3Atest-1f6feb) ![license](https://img.shields.io/badge/license-MIT-blue)
 
-## 🛠 Tecnologias Utilizadas  
-- HTML5  
-- CSS3  
-- JavaScript  
+## What it does
 
-- ## 🌐 Acesse o Projeto
+- records an expense with description, amount and month
+- filters the table by month and shows the running total for that month
+- exports the visible rows to CSV
+- clears everything with one action, behind a confirmation
 
-[Controle de Custos Pessoais - Clique aqui para acessar](https://pablog-7.github.io/controle-de-custos-pessoais/)
+## Run it
 
-## Como Usar
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/PabloG-7/Gastos-Mensais.git
+```bash
+git clone https://github.com/Stievehuihan/SpendLoom.git
+cd SpendLoom
+python -m http.server 8000
+# open http://localhost:8000
+```
+
+No install step: the page loads `src/money.js` for parsing and totals and `script.js`
+for the UI.
+
+## Tests
+
+```bash
+node --test tests/
+```
+
+`src/money.js` is deliberately free of DOM access, which is what makes it testable:
+
+| function | used for |
+|---|---|
+| `parseAmount` | reads `1.234,56` and `1234.56` the same way, returns `NaN` for junk |
+| `totalForMonth` | month total, ignoring malformed rows instead of poisoning the sum |
+| `totalsByMonth` | grouped totals, newest month first |
+
+## Structure
+
+```
+index.html        markup: form, month filter, table, summary card
+styles.css        layout, palette, responsive rules (media query.css holds the breakpoints)
+script.js         DOM wiring: render, submit, delete, export, clear
+src/money.js      parsing and totals, no DOM
+tests/            node:test suite for the module above
+```
+
+## Design notes
+
+- the table is rendered from the same array that is persisted, so a reload cannot show a
+  different list than the one on screen
+- amounts are rounded to cents at the boundary (`Math.round(x * 100) / 100`), never mid-sum
+- the empty state is part of the table, not a separate page
+
+## License
+
+MIT — see `LICENSE`.
