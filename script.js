@@ -131,7 +131,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Exportar dados
   exportBtn.addEventListener('click', () => {
-      const dadosExport = gastos.map(g => ({
+      const mes = filterMonth.value;
+      const visiveis = mes ? gastos.filter(g => g.mes === mes) : gastos;
+      const dadosExport = visiveis.map(g => ({
           Mês: g.mes,
           Categoria: g.categoria,
           Valor: formatarMoeda(g.valor),
@@ -147,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'gastos.csv';
+      a.download = mes ? ('gastos-' + mes + '.csv') : 'gastos.csv';
       a.click();
       window.URL.revokeObjectURL(url);
   });
