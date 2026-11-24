@@ -81,10 +81,21 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', (e) => {
       e.preventDefault();
       
+      const campoValor = document.getElementById('valor');
+      const valor = (window.Money && window.Money.parseAmount)
+          ? window.Money.parseAmount(campoValor.value)
+          : parseFloat(campoValor.value.replace(',', '.'));
+      if (!Number.isFinite(valor) || valor <= 0) {
+          campoValor.setCustomValidity('Informe um valor como 1.234,56');
+          campoValor.reportValidity();
+          campoValor.addEventListener('input', () => campoValor.setCustomValidity(''), { once: true });
+          return;
+      }
+
       const novoGasto = {
           mes: document.getElementById('mes').value,
           categoria: document.getElementById('categoria').value,
-          valor: parseFloat(document.getElementById('valor').value),
+          valor,
           descricao: document.getElementById('descricao').value
       };
 
